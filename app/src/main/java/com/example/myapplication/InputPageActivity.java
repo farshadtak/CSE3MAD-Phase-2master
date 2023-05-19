@@ -61,7 +61,8 @@ public class InputPageActivity extends AppCompatActivity {
         Map<String, Object> userData = new HashMap<>();
         userData.put("height", height);
         userData.put("weight", weight);
-        userData.put("userRef", db.collection("users").document(currentUserId));
+        Log.d("heree", db.collection("users").document(currentUserId).getId() + "+++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        userData.put("userRef", db.collection("users").document(currentUserId).getId());
 
         db.collection("userdata")
                 .add(userData)

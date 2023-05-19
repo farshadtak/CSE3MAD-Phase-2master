@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -113,9 +114,12 @@ public class MainActivity extends AppCompatActivity {
 
                                                 //Log.d(TAG, document.getId() + "   ---   " + "password +");
                                             } else {
+                                                Toast.makeText(MainActivity.this, "password incorrect", Toast.LENGTH_SHORT).show();
                                                 //Log.d(TAG, document.getId() + "   ---   " + "password -");
                                             }
                                         } else {
+                                            Toast.makeText(MainActivity.this, "username incorrect", Toast.LENGTH_SHORT).show();
+
                                             //Log.d(TAG, document.getId() + "   ---   " + "username -");
                                         }
                                     }
