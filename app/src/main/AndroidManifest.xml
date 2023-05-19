@@ -12,6 +12,26 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ResultPageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_result_page"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".InputPageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_input_page"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".LeaderboardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_leaderboard"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
